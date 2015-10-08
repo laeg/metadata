@@ -27,7 +27,7 @@ public class SchemaTests {
     public Neo4jRule neo4j = new Neo4jRule()
             .withFixture("MERGE (p:Person {name: 'Nicole'})-[:KNOWS]->(p2:Person {name: 'Mark'})")
             .withFixture("MERGE (p:Person {name: 'Nicole'})-[:LIKES]->(f:Food {name: 'Pie'})")
-            .withExtension("/metadata", Schema.class);
+            .withExtension("/metadata", "com.nineteen.metadata");
 
 
     @Test
