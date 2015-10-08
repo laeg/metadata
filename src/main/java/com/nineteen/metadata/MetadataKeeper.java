@@ -8,7 +8,6 @@ import java.util.HashMap;
 /**
  * Created by laeg on 08/10/2015.
  */
-@Provider
 public class MetadataKeeper {
 
     public HashMap<String, JSONObject> metaCollection;
